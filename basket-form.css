@@ -1,0 +1,189 @@
+/*********/
+/* MAIN */
+/********/
+
+#form {
+    /* display */
+    width: 80%;
+    /* box-model */
+    margin: 0 auto;
+}
+
+/* BASKET */
+.basket,
+.delivery,
+.amount,
+.continue-pay {
+    border-bottom: 1px solid var(--light-grey);
+    padding-bottom: 1.5em;
+}
+
+.basket-title {
+    padding: 1em 0;
+}
+
+/* table */
+table {
+    /* display */
+    border-collapse: collapse;
+    border: 1px solid var(--light-grey);
+    box-shadow: var(--box-shadow);
+    width: 90%;
+    /* box-model */
+    margin: 0 auto;
+
+}
+
+th {
+    /* font-style */
+    font-size: 1.25em;
+    border-bottom: 1px ridge var(--dark-grey);
+    text-align: center;
+    /* box-model */
+    padding: 1em 0;
+}
+
+tr:nth-child(even) {
+    /* display */
+    background-color: var(--clear-grey);
+}
+
+td {
+    /* display */
+    height: 2em;
+    width: 20%;
+    text-align: center;
+
+}
+
+.cancel {
+    color: red;
+    font-size: 0.85em;
+    text-decoration: underline;
+    padding-left: 0.25em;
+}
+
+.cancel-cell {
+    text-align: start;
+}
+
+.quantity {
+    width: 20%;
+    padding-right: 0;
+}
+
+.quantity-cell {
+    text-align: end;
+}
+
+.total {
+    font-weight: bold;
+    padding: 0.5em 0;
+}
+
+.total-price {
+    color: var(--red);
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* DELIVERY */
+
+
+fieldset {
+    border: none;
+}
+
+label {
+    padding: 0.5em 0;
+}
+
+
+.address-form {
+    display: flex;
+}
+
+.where,
+.address-title,
+.more-info {
+    font-weight: 600;
+    color: var(--dark-grey);
+}
+
+.option-delivery-btn,
+.sms,
+.happy,
+.warranty {
+    display: flex;
+    align-items: center;
+    height: 2em;
+    border-radius: 0;
+}
+
+.option-address {
+    padding: 0 0 0 0.5em;
+}
+
+/* ADDRESS */
+.address-wish,
+.address {
+    width: 50%;
+}
+
+.address-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.address-txt,
+#adding-info {
+    background-color: var(--clear-grey);
+    border: none;
+    border-bottom: 1px solid var(--dark-grey);
+    height: 2em;
+}
+
+#adding-info {
+    width: 100%;
+    height: 5em;
+    margin-top: 0.5em;
+}
+
+
+/*AMOUNT*/
+.amount-detail, .continue-pay {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--clear-grey);
+    width: 95%;
+    box-shadow: var(--box-shadow);
+    margin: 2em auto 0;
+}
+
+.amount-txt, .continue {
+    font-weight: bold;
+    margin-left: 2em;
+}
+
+.total-price, .pay {
+    margin-right: 2em;
+}
+
+/* BUTTON */
+
+button {
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 0;
+    border: none;
+    cursor: pointer;
+    width: 15em;
+    height: 3em;
+    margin-top: 1em;
+}
+
+.pay {
+    color: var(--white);
+    background-color: var(--red);
+}

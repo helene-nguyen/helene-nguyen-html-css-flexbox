@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>oFig</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="basket-form.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="title">
+            <h1 class="logo">
+                oFig
+            </h1>
+            <p class="side-txt-logo">
+                Figurines et statuettes
+            </p>
+        </div>
+        <div class="theme">
+            <p class="theme-txt">Votre panier contient <span class="italic">3 produits</span></p>
+        </div>
+
+    </header>
+
+    <!-- MAIN -->
+    <div id="form">
+        <!-- Basket -->
+        <section class="basket">
+            <h2 class="basket-title">Votre panier</h2>
+
+            <!-- table -->
+            <table>
+                <tr>
+                    <th>Figurine</th>
+                    <th>Prix unitaire</th>
+                    <th colspan="2">Quantité</th>
+                </tr>
+                <tr>
+                    <td>Cloud Strife</td>
+                    <td>59 €</td>
+                    <td class="quantity-cell"><input class="quantity" type="text" value="1"></td>
+                    <td class="cancel-cell"><a href="#">
+                            <p class="cancel">supprimer</p>
+                        </a>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Tifa Lockhart</td>
+                    <td>69 €</td>
+                    <td class="quantity-cell"><input class="quantity" type="text" value="1"></td>
+                    <td class="cancel-cell"><a href="#">
+                            <p class="cancel">supprimer</p>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Barret Wallace</td>
+                    <td>69 €</td>
+                    <td class="quantity-cell"><input class="quantity" type="text" value="1"></td>
+                    <td class="cancel-cell"><a href="#">
+                            <p class="cancel">supprimer</p>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="total" colspan="2">Total de la commande :</td>
+                    <td class="total-price" colspan="2">197 €</td>
+                </tr>
+
+
+            </table>
+        </section>
+
+        <!-- Delivery -->
+
+        <section class="delivery">
+            <h2 class="delivery-title">Préférences de livraison</h2>
+            <div class="address-form">
+
+                <div class="address-wish">
+                    <p class="where">Où souhaitez-vous être livré ?</p>
+
+                    <fieldset>
+                        <div class="option-delivery">
+                            <div class="option-delivery-btn">
+                                <input type="radio" id="address1" name="option-delivery">
+                                <p class="option-address">Mon adresse courante</p>
+                            </div>
+                            <div class="option-delivery-btn">
+                                <input type="radio" id="address2" name="option-delivery">
+                                <p class="option-address">Autre adresse</p>
+                            </div>
+
+                        </div>
+
+                    </fieldset>
+
+                    <p class="where">Options</p>
+
+                    <fieldset>
+                        <div class="sms">
+                            <input type="checkbox" value="sms">
+                            <p class="sms-txt">Suivi de livraison par sms (inclus)</p>
+                        </div>
+                        <div class="happy">
+                            <input type="checkbox" value="happy">
+                            <p class="happy-txt">Satisfait ou remboursé (+2euros)</p>
+                        </div>
+                        <div class="warranty">
+                            <input type="checkbox" value="warranty">
+                            <p class="warranty-txt">Garantie 2 ans (+10 euros)</p>
+                        </div>
+
+
+                    </fieldset>
+
+
+                </div>
+
+                <div class="address">
+                    <p class="address-title">Adresse</p>
+
+                    <fieldset class="address-info">
+                        <label for="street">Rue</label>
+                        <input class="address-txt" type="text" required>
+                        <label for="postal-code">Code postal</label>
+                        <input class="address-txt" type="text" required>
+                        <label for="country">Ville</label>
+                        <input class="address-txt" type="text" required>
+                    </fieldset>
+
+                    <p class="more-info">Informations complémentaires</p>
+
+                    <fieldset>
+                        <label for="more-info">interphone, bâtiment,etc.</label>
+                        <textarea name="adding-info" id="adding-info" cols="30" rows="7"></textarea>
+                    </fieldset>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Confirm basket -->
+        <section class="confirm-basket">
+            <div class="amount">
+                <div class="amount-detail">
+                    <p class="amount-txt">Montant total à régler :</p>
+                    <p class="total-price">197 €</p>
+                </div>
+
+            </div>
+
+            <div class="continue-pay">
+                <button class="continue">Continuer vos achats</button>
+                <button class="pay">Valider et payer</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer">
+            <p class="footer-txt">oFig - toutes les images sont sous copyright SquareEnix</p>
+        </div>
+    </footer>
+</body>
+
+</html>
